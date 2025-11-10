@@ -24,24 +24,28 @@ Shadowgraph example of a bullet shockwave (MIT, Harold Edgerton):
 
 The simulation solves the **Euler equations** for inviscid compressible flow:
 
-- **Mass conservation**
-\[
-\frac{\partial \rho}{\partial t} + \nabla \cdot (\rho \vec{u}) = 0
-\]
+### **Euler Equations:**
 
-- **Momentum conservation**
-\[
-\frac{\partial (\rho\vec{u})}{\partial t}
-+ \nabla\cdot(\rho\vec{u}\otimes\vec{u} + pI) = 0
-\]
+$$
+\frac{\partial \rho}{\partial t}
+\;+\;
+\nabla \cdot (\rho \vec{u})
+= 0
+$$
 
-- **Energy conservation**
-\[
-\frac{\partial \rho E}{\partial t}
-+ \nabla\cdot\left((E + \frac{p}{\rho})\rho\vec{u}\right) = 0
-\]
+$$
+\frac{\partial (\rho \vec{u})}{\partial t}
+\;+\;
+\nabla \cdot (\rho \vec{u} \otimes \vec{u} + p \mathbf{I})
+= 0
+$$
 
----
+$$
+\frac{\partial (\rho E)}{\partial t}
+\;+\;
+\nabla \cdot \left( \left( E + \frac{p}{\rho} \right) \rho \vec{u} \right)
+= 0
+$$
 
 ## 🧱 Boundary Conditions
 
@@ -72,7 +76,8 @@ vortex structures forming behind the bullet.
 Shadowgraph snapshots were taken at **0.6 seconds** and **2.7 seconds**,  
 highlighting shockwave formation and evolution.
 
-*(Insert images: shadowgraph_0.6s.png, shadowgraph_2.7s.png)*
+![mesh](source/b300-0.6-scalar.png)
+![mesh](source/b300-2.7-scalar.png)
 
 ---
 
