@@ -16,7 +16,7 @@ and study the resulting **shockwaves**, **flow separation**, and **numerical eff
 introduced by different mesh resolutions.
 
 Shadowgraph example of a bullet shockwave (MIT, Harold Edgerton):  
-*(Image source: Wikipedia)*
+![mesh](source/Shockwave.jpg)
 
 ---
 
@@ -62,7 +62,8 @@ A structured mesh was used for the bullet domain.
 The mesh quality directly impacts numerical viscosity and the visibility of  
 vortex structures forming behind the bullet.
 
-*(Insert your mesh image here, e.g. from /images/mesh.png)*
+![mesh](source/mesh.png)
+
 
 ---
 
@@ -87,7 +88,10 @@ different mesh densities:
 
 Higher resolution yields sharper shock fronts and clearer vortex structures.
 
-*(Insert your comparison grid images here)*
+![mesh](source/b100-2.png)
+![mesh](source/b200-2.png)
+![mesh](source/b300-2.png)
+![mesh](source/b400.png)
 
 ---
 
@@ -100,7 +104,8 @@ Key result:
 - Increasing mesh density improves solution accuracy and reduces smearing.
 - 400 cells-per-height simulation required **14 hours of CPU time** for 5 seconds of physical time.
 
-*(Insert your plots: pressure_comparison.png, density_comparison.png)*
+![mesh](source/plot_p.png)
+![mesh](source/plot_rho.png)
 
 ---
 
@@ -108,7 +113,8 @@ Key result:
 
 L1 and L2 norms were computed for line slices to quantify convergence and mesh dependence.
 
-*(Insert figures: L1_norm.png, L2_norm.png)*
+![mesh](source/convergenceL1.png)
+![mesh](source/convergenceL2.png)
 
 ---
 
